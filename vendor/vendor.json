@@ -1,0 +1,193 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "QeKwBtN2df+j+4stw3bQJ6yO4EY=",
+			"path": "github.com/gin-contrib/sse",
+			"revision": "22d885f9ecc78bf4ee5d72b937e4bbcdc58e8cae",
+			"revisionTime": "2017-01-09T09:34:21Z"
+		},
+		{
+			"checksumSHA1": "9z+VuB/Jer7pZthtvQIA4vXOkDE=",
+			"path": "github.com/gin-gonic/gin",
+			"revision": "29a145c85dc0fafc3dd0ada62d856c4d95240010",
+			"revisionTime": "2019-01-09T01:32:44Z"
+		},
+		{
+			"checksumSHA1": "/1qWq3FW10xCbNncmaoynNnWRxI=",
+			"path": "github.com/gin-gonic/gin/binding",
+			"revision": "29a145c85dc0fafc3dd0ada62d856c4d95240010",
+			"revisionTime": "2019-01-09T01:32:44Z"
+		},
+		{
+			"checksumSHA1": "Y8Vu2NT4c2ve963fedBxoJyiU6s=",
+			"path": "github.com/gin-gonic/gin/internal/json",
+			"revision": "29a145c85dc0fafc3dd0ada62d856c4d95240010",
+			"revisionTime": "2019-01-09T01:32:44Z"
+		},
+		{
+			"checksumSHA1": "afLqBfX9SeIP6eeTZb3WwdTFaOo=",
+			"path": "github.com/gin-gonic/gin/render",
+			"revision": "29a145c85dc0fafc3dd0ada62d856c4d95240010",
+			"revisionTime": "2019-01-09T01:32:44Z"
+		},
+		{
+			"checksumSHA1": "Y2MOwzNZfl4NRNDbLCZa6sgx7O0=",
+			"path": "github.com/golang/protobuf/proto",
+			"revision": "347cf4a86c1cb8d262994d8ef5924d4576c5b331",
+			"revisionTime": "2019-01-09T07:22:47Z"
+		},
+		{
+			"checksumSHA1": "yNyE9MrpDJQAxOxSipSIBgBhuNQ=",
+			"path": "github.com/google/uuid",
+			"revision": "9b3b1e0f5f99ae461456d768e7d301a7acdaa2d8",
+			"revisionTime": "2018-09-17T14:00:05Z"
+		},
+		{
+			"checksumSHA1": "GiVgQkx5acnq+JZtYiuHPlhHoso=",
+			"path": "github.com/mattn/go-isatty",
+			"revision": "3fb116b820352b7f0c281308a4d6250c22d94e27",
+			"revisionTime": "2018-08-30T10:17:45Z"
+		},
+		{
+			"checksumSHA1": "WhGcvhP4QmgOec4zMmFjpvdFRUI=",
+			"path": "github.com/pingdai/tools/conf",
+			"revision": "448523a9a88b0cd2bc7ed9d8be754150348895d8",
+			"revisionTime": "2019-07-10T09:19:22Z"
+		},
+		{
+			"checksumSHA1": "TXtnReHD8pGlal89cX3+D1z6f0Q=",
+			"path": "github.com/pingdai/tools/configwatcherx",
+			"revision": "448523a9a88b0cd2bc7ed9d8be754150348895d8",
+			"revisionTime": "2019-07-10T09:19:22Z"
+		},
+		{
+			"checksumSHA1": "P3bVae4bRNWbr9MSka1qBxDeAr0=",
+			"path": "github.com/pingdai/tools/constants",
+			"revision": "448523a9a88b0cd2bc7ed9d8be754150348895d8",
+			"revisionTime": "2019-07-10T09:19:22Z"
+		},
+		{
+			"checksumSHA1": "2RzuO3NZFsXsNa1F5N8uYVXgByg=",
+			"path": "github.com/pingdai/tools/courier/checkhealth",
+			"revision": "448523a9a88b0cd2bc7ed9d8be754150348895d8",
+			"revisionTime": "2019-07-10T09:19:22Z"
+		},
+		{
+			"checksumSHA1": "8aHDhNSKMycl98CxL9yR/rVi91c=",
+			"path": "github.com/pingdai/tools/courier/swagger",
+			"revision": "448523a9a88b0cd2bc7ed9d8be754150348895d8",
+			"revisionTime": "2019-07-10T09:19:22Z"
+		},
+		{
+			"checksumSHA1": "m8952YkYA/TikVohWKFLwkBhr4M=",
+			"path": "github.com/pingdai/tools/duration",
+			"revision": "448523a9a88b0cd2bc7ed9d8be754150348895d8",
+			"revisionTime": "2019-07-10T09:19:22Z"
+		},
+		{
+			"checksumSHA1": "wgupZ6mxXsXa0cyCf5k+3qtVAzU=",
+			"path": "github.com/pingdai/tools/ginx",
+			"revision": "448523a9a88b0cd2bc7ed9d8be754150348895d8",
+			"revisionTime": "2019-07-10T09:19:22Z"
+		},
+		{
+			"checksumSHA1": "J/D9p1l1emgYBMbrT0lchazCFgc=",
+			"path": "github.com/pingdai/tools/log",
+			"revision": "448523a9a88b0cd2bc7ed9d8be754150348895d8",
+			"revisionTime": "2019-07-10T09:19:22Z"
+		},
+		{
+			"checksumSHA1": "ustvHTUlbeab8hjAIGElxTlD4fo=",
+			"path": "github.com/pingdai/tools/log/context",
+			"revision": "448523a9a88b0cd2bc7ed9d8be754150348895d8",
+			"revisionTime": "2019-07-10T09:19:22Z"
+		},
+		{
+			"checksumSHA1": "o40/n3Si9tihb6oGmBABJb9t4a0=",
+			"path": "github.com/pingdai/tools/log/hooks",
+			"revision": "448523a9a88b0cd2bc7ed9d8be754150348895d8",
+			"revisionTime": "2019-07-10T09:19:22Z"
+		},
+		{
+			"checksumSHA1": "gp0cUp0fuEJJYoO/X8iCTEQOGyg=",
+			"path": "github.com/pingdai/tools/log/hooks/merchant_code",
+			"revision": "448523a9a88b0cd2bc7ed9d8be754150348895d8",
+			"revisionTime": "2019-07-10T09:19:22Z"
+		},
+		{
+			"checksumSHA1": "xHXUWtJe2CMidNDYipA1VgTTEWM=",
+			"path": "github.com/pingdai/tools/reflectx",
+			"revision": "448523a9a88b0cd2bc7ed9d8be754150348895d8",
+			"revisionTime": "2019-07-10T09:19:22Z"
+		},
+		{
+			"checksumSHA1": "Ol6Mlcv4IAptLpkqihhOsmqV/ek=",
+			"path": "github.com/pingdai/tools/servicex",
+			"revision": "448523a9a88b0cd2bc7ed9d8be754150348895d8",
+			"revisionTime": "2019-07-10T09:19:22Z"
+		},
+		{
+			"checksumSHA1": "v/x846B1bUpTjz5fNli5MlnXIsw=",
+			"path": "github.com/pingdai/tools/str",
+			"revision": "448523a9a88b0cd2bc7ed9d8be754150348895d8",
+			"revisionTime": "2019-07-10T09:19:22Z"
+		},
+		{
+			"checksumSHA1": "ze1R6Lrk0kW0cX24ZdZD6ZpIDCo=",
+			"path": "github.com/samuel/go-zookeeper/zk",
+			"revision": "c4fab1ac1bec58281ad0667dc3f0907a9476ac47",
+			"revisionTime": "2018-01-30T19:37:22Z"
+		},
+		{
+			"checksumSHA1": "5fRTP+zI9WQqNzyHbi2qarMGauQ=",
+			"path": "github.com/sirupsen/logrus",
+			"revision": "ea8897e79973357ba785ac2533559a6297e83c44",
+			"revisionTime": "2018-05-23T07:42:43Z"
+		},
+		{
+			"checksumSHA1": "MAzQxLlGpnkO2tPOcQtZX9ciLRM=",
+			"path": "github.com/ugorji/go/codec",
+			"revision": "772ced7fd4c2f6322c07537a9a93b68d74551fa6",
+			"revisionTime": "2018-12-09T15:14:46Z"
+		},
+		{
+			"checksumSHA1": "BGm8lKZmvJbf/YOJLeL1rw2WVjA=",
+			"path": "golang.org/x/crypto/ssh/terminal",
+			"revision": "a8fb68e7206f8c78be19b432c58eb52a6aa34462",
+			"revisionTime": "2018-06-11T18:48:21Z"
+		},
+		{
+			"checksumSHA1": "5BAifTvbu6TCdgOEKRabDIIjcp4=",
+			"path": "golang.org/x/sys/unix",
+			"revision": "78d5f264b493f125018180c204871ecf58a2dce1",
+			"revisionTime": "2018-04-29T08:56:08Z"
+		},
+		{
+			"checksumSHA1": "Dfz4tGItokMvHZENCsBmPPB8FGQ=",
+			"path": "golang.org/x/sys/windows",
+			"revision": "78d5f264b493f125018180c204871ecf58a2dce1",
+			"revisionTime": "2018-04-29T08:56:08Z"
+		},
+		{
+			"checksumSHA1": "P/k5ZGf0lEBgpKgkwy++F7K1PSg=",
+			"path": "gopkg.in/go-playground/validator.v8",
+			"revision": "5f1438d3fca68893a817e4a66806cea46a9e4ebf",
+			"revisionTime": "2017-07-30T05:02:35Z"
+		},
+		{
+			"checksumSHA1": "TM3Neoy1xRAKyZYMGzKc41sDFW4=",
+			"path": "gopkg.in/natefinch/lumberjack.v2",
+			"revision": "a96e63847dc3c67d17befa69c303767e2f84e54f",
+			"revisionTime": "2017-05-31T16:03:50Z"
+		},
+		{
+			"checksumSHA1": "QqDq2x8XOU7IoOR98Cx1eiV5QY8=",
+			"path": "gopkg.in/yaml.v2",
+			"revision": "51d6538a90f86fe93ac480b35f37b2be17fef232",
+			"revisionTime": "2018-11-15T11:05:04Z"
+		}
+	],
+	"rootPath": "github.com/pingdai/online-wallpaper"
+}
