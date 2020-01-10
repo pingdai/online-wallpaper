@@ -27,6 +27,7 @@ type VerifyRes struct {
 	// in:body
 	Rsp struct {
 		Data struct {
+			Echostr string `json:"echostr"`
 		} `json:"data"`
 		Code int    `json:"code"`
 		Msg  string `json:"msg"`
@@ -67,7 +68,9 @@ func Verify(c *gin.Context) {
 		logrus.Warnf("微信回调 参数错误，req:%+v err:%v", req, err)
 		return
 	}
-	logrus.Infof("微信回调 参数 req:%+v", req)
+	logrus.Infof("微信回调 参数 req:%+v", *req)
+
+	res["echostr"] = req.Echostr
 
 	return
 }
