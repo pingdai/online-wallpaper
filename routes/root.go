@@ -16,9 +16,15 @@ func RootRouter(engine *gin.Engine) {
 		checkhealth.Init(root)
 	}
 
-	apiRouter := root.Group("bing")
+	bingRouter := root.Group("bing")
 	{
 		// bing的壁纸获取
-		apiRouter.GET("wallpaper", bing.GetWallpaper)
+		bingRouter.GET("wallpaper", bing.GetWallpaper)
+	}
+
+	wxRouter := root.Group("wx")
+	{
+		// 接入微信
+		wxRouter.GET("verify", wx.Verify)
 	}
 }
