@@ -60,6 +60,7 @@ func Verify(c *gin.Context) {
 		c.Writer.Header().Set("Content-Type", "application/json")
 		b, _ := json.Marshal(gin.H{"echostr": req.Echostr})
 		c.Writer.Write(b)
+		logrus.Infof("微信回调返回：%s", string(b))
 	}()
 
 	if err = c.Bind(req); err != nil {
