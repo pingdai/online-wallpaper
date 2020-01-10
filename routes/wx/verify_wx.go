@@ -1,7 +1,6 @@
 package wx
 
 import (
-	"encoding/json"
 	"github.com/gin-gonic/gin"
 	"github.com/sirupsen/logrus"
 )
@@ -57,10 +56,11 @@ func Verify(c *gin.Context) {
 	var err error
 	var req = &VerifyReq{}
 	defer func() {
-		c.Writer.Header().Set("Content-Type", "application/json")
-		b, _ := json.Marshal(gin.H{"echostr": req.Echostr})
-		c.Writer.Write(b)
-		logrus.Infof("微信回调返回：%s", string(b))
+		// c.Writer.Header().Set("Content-Type", "application/json")
+		// b, _ := json.Marshal(gin.H{"echostr": req.Echostr})
+		// c.Writer.Write(b)
+		// logrus.Infof("微信回调返回：%s", string(b))
+		c.Writer.WriteString(req.Echostr)
 	}()
 
 	if err = c.Bind(req); err != nil {
