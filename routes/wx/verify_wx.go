@@ -3,7 +3,6 @@ package wx
 import (
 	"encoding/json"
 	"github.com/gin-gonic/gin"
-	"github.com/pingdai/online-wallpaper/modules"
 	"github.com/sirupsen/logrus"
 )
 
@@ -54,7 +53,7 @@ type VerifyRes struct {
 //       200: VerifyRes
 //		 default: CommRes
 func Verify(c *gin.Context) {
-	var res = make(map[string]interface{})
+	// var res = make(map[string]interface{})
 	var err error
 	var req = &VerifyReq{}
 	defer func() {
