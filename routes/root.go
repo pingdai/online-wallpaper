@@ -3,6 +3,7 @@ package routes
 import (
 	"github.com/gin-gonic/gin"
 	"github.com/pingdai/online-wallpaper/routes/bing"
+	"github.com/pingdai/online-wallpaper/routes/wx"
 
 	"github.com/pingdai/online-wallpaper/global"
 	"github.com/pingdai/tools/courier/checkhealth"
