@@ -1,6 +1,7 @@
 package wx
 
 import (
+	"encoding/json"
 	"github.com/gin-gonic/gin"
 	"github.com/pingdai/online-wallpaper/modules"
 	"github.com/sirupsen/logrus"
@@ -57,11 +58,9 @@ func Verify(c *gin.Context) {
 	var err error
 	var req = &VerifyReq{}
 	defer func() {
-		if err != nil {
-			modules.SendResponse(c, -1, err.Error(), res)
-		} else {
-			modules.SendResponse(c, 0, "succ", res)
-		}
+		c.Writer.Header().Set("Content-Type", "application/json")
+		b, _ := json.Marshal(gin.H{"echostr": req.Echostr})
+		c.Writer.Write(b)
 	}()
 
 	if err = c.Bind(req); err != nil {
@@ -69,8 +68,6 @@ func Verify(c *gin.Context) {
 		return
 	}
 	logrus.Infof("微信回调 参数 req:%+v", *req)
-
-	res["echostr"] = req.Echostr
 
 	return
 }
