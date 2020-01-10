@@ -3,16 +3,23 @@ package wx
 import (
 	"github.com/gin-gonic/gin"
 	"github.com/pingdai/online-wallpaper/modules"
+	"github.com/sirupsen/logrus"
 )
 
 // swagger:parameters VerifyReq
 type VerifyReq struct {
-	// 请求图片截止天数，0今天，-1截止明天，1截止昨天（以此类推，目前最多获取到七天前的图片）
+	// 签名
 	//  required:false
-	Idx int `json:"idx" form:"idx"`
-	// 1~8请求返回数量，目前最多一次获取8张
+	Signature string `json:"signature" form:"signature"`
+	// 回显字符串
 	// required:true
-	N int `json:"n" form:"n" binding:"required"`
+	Echostr string `json:"echostr" form:"echostr" binding:"required"`
+	// 时间戳
+	// required:false
+	Timestamp string `json:"timestamp" form:"timestamp"`
+	//
+	// required:false
+	Nonce string `json:"nonce" form:"nonce"`
 }
 
 // swagger:response VerifyRes
@@ -47,7 +54,7 @@ type VerifyRes struct {
 func Verify(c *gin.Context) {
 	var res = make(map[string]interface{})
 	var err error
-	// var req = &VerifyReq{}
+	var req = &VerifyReq{}
 	defer func() {
 		if err != nil {
 			modules.SendResponse(c, -1, err.Error(), res)
@@ -56,11 +63,11 @@ func Verify(c *gin.Context) {
 		}
 	}()
 
-	// if err = c.Bind(req); err != nil {
-	// 	logrus.Warnf("获取必应壁纸 参数错误，req:%+v err:%v", req, err)
-	// 	return
-	// }
-	// logrus.Infof("获取必应壁纸 参数 req:%+v", req)
+	if err = c.Bind(req); err != nil {
+		logrus.Warnf("微信回调 参数错误，req:%+v err:%v", req, err)
+		return
+	}
+	logrus.Infof("微信回调 参数 req:%+v", req)
 
 	return
 }
